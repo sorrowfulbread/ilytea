@@ -1,12 +1,13 @@
 body{
 	margin:0;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .flex-container {
@@ -22,5 +23,66 @@ img {
 	font-size: 40px;
 	height: 60px;
 	line-height: 60px;
-	
+}
+
+#landing-wrapper{
+	background: red;
+	width: 100%;
+	height: 500px;
+	padding-bottom: 100px;
+}
+
+#wherewhen-wrapper{
+	background: cyan;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#where-wrapper{
+	background: orange;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#when-wrapper{
+	background: greenyellow;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#drink-wrapper{
+	background: yellow;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.drink-element{
+	background: teal;
+	padding: 2%;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#thai-wrapper{
+	flex-direction: row-reverse;
+}
+
+.drink-image{
+	margin: 0;
+	width: 45%;
+	height: 400px;
+}
+.drink-text{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
