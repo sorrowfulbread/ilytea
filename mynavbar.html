@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+    body{
+        margin: 0;
+    }
+    #top_logo {
+    padding: 20px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+    #navbar {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar_buttons {
+        color: white;
+        text-align: center;
+        width: 25%;
+        padding: 16px;
+    }
+    .navbar_buttons:hover {
+        background-color:aqua;
+        color:white;
+    }
+    .content {
+        padding: 16px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+    .sticky + .content {
+        padding-top: 60px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <img id=top_logo src="img/ilytea_logo.jpg" alt="ilytea_logo"   width="300px">
+    </div>
+    <div id="navbar"> 
+        <div class="navbar_buttons">HOME</div>
+        <div class="navbar_buttons">BUY</div>
+        <div class="navbar_buttons">FLAVOR</div>
+        <div class="navbar_buttons">CONTACT</div>
+    </div>
+    
+    <div class="content">
+        <h3>Sticky Navigation Example</h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+    </script>
+    
+</body>
+</html>
